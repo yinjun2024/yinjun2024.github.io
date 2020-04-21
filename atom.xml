@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>Gridea</title>
-    <updated>2020-04-21T11:16:50.477Z</updated>
+    <updated>2020-04-21T11:17:34.674Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -10,6 +10,136 @@
     <logo>https://yinjun2024.github.io/images/avatar.png</logo>
     <icon>https://yinjun2024.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[LG2894——[USACO08FEB]Hotel G]]></title>
+        <id>https://yinjun2024.github.io/post/lg2894-usaco08febhotel-g/</id>
+        <link href="https://yinjun2024.github.io/post/lg2894-usaco08febhotel-g/">
+        </link>
+        <updated>2020-04-21T11:17:11.000Z</updated>
+        <content type="html"><![CDATA[<p>Links: <a href="https://www.luogu.com.cn/problem/P2894">Here</a></p>
+<p>这道题是一道线段树的题目。</p>
+<p>乍一看，修改还好修改，只是...</p>
+<p>...查询是什么鬼？</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/46mbvqdh.png" alt="" loading="lazy"></figure>
+<p>题目是要查询长度大于 n 的连续空房区间。</p>
+<p>那么我们定义 <code>val[]</code> 为区间内的最大空房。</p>
+<p>我们可以考虑维护：</p>
+<ol>
+<li>区间内从左边开始的最长连续空房区间的长度(<code>lmax[]</code>)。</li>
+<li>区间内从右边开始的最长连续空房区间的长度(<code>rmax[]</code>)。</li>
+</ol>
+<p>查询时，我们可以：</p>
+<ol>
+<li>只从区间左子树查询(<code>val[lson]</code>)，如 <code>* 0 0 *|* * * *</code>。</li>
+<li>只从区间右子树查询(<code>val[rson]</code>)，如 <code>* * * *|* 0 0 *</code>。</li>
+<li>查询的区间跨越了中线(<code>rmax[lson] + lmax[rson]</code>)，如 <code>* * 0 0|0 * * *</code>。</li>
+</ol>
+<p>答案就是<strong>符合要求时</strong>按顺序查询：</p>
+<pre><code class="language-cpp">if (val[lson] &gt;= want) return search(want, l, mid, lson);
+else if (rmax[lson] + lmax[rson] &gt;= want) return mid - rmax[lson] + 1;
+else if (val[rson] &gt;= want) return search(want, mid + 1, r, rson);
+else return 0;
+
+</code></pre>
+<p>在<s>个人的</s>代码中，<code>lazy[o] == 1</code> 代表清空区间，<code>lazy[o] == 2</code>代表填满区间。（<code>lazy[o] == 0</code> 不需要说了吧...）</p>
+<p>再注意一下 <code>pushdown</code> 下推懒标记操作就可以了：</p>
+<pre><code class="language-cpp">void pushdown(int o) {
+    if (lazy[o]) {
+        lmax[lson] = rmax[lson] = val[lson] = lazy[o] == 1 ? 0 : len[lson];
+        lmax[rson] = rmax[rson] = val[rson] = lazy[o] == 1 ? 0 : len[rson];
+        lazy[lson] = lazy[rson] = lazy[o];
+    }
+    lazy[o] = 0;
+}
+</code></pre>
+<p>完整代码：</p>
+<pre><code class="language-cpp">#include &lt;cstdio&gt;
+#include &lt;algorithm&gt;
+#define lson o &lt;&lt; 1
+#define rson (o &lt;&lt; 1) | 1
+using namespace std;
+const int MAXN = 50001;
+struct SegmentTree {
+    int val[MAXN &lt;&lt; 2]， len[MAXN &lt;&lt; 2], lmax[MAXN &lt;&lt; 2], rmax[MAXN &lt;&lt; 2], lazy[MAXN &lt;&lt; 2];
+    void pushup(int o) {
+        lmax[o] = val[lson] == len[lson] ? len[lson] + lmax[rson] : lmax[lson];
+        rmax[o] = val[rson] == len[rson] ? len[rson] + rmax[lson] ： rmax[rson];
+        val[o] = max(max(val[lson], val[rson]), rmax[lson] + lmax[rson]);
+    }
+    void pushdown(int o) {
+        if (lazy[o]) {
+            lmax[lson] = rmax[lson] = val[lson] = lazy[o] == 1 ? 0 : len[lson];
+            lmax[rson] = rmax[rson] = val[rson] = lazy[o] == 1 ? 0 : len[rson];
+            lazy[lson] = lazy[rson] = lazy[o];
+        }
+        lazy[o] = 0;
+    }
+    void build(int l, int r, int o) {
+        val[o] = len[o] = lmax[o] = rmax[o] = r - l + 1;
+        lazy[o] = 0;
+        if (l != r) {
+            int mid = (l + r) &gt;&gt; 1;
+            build(l, mid, lson);
+            build(mid + 1, r, rson);
+        }
+    }
+    int search(int want, int l, int r, int o) {
+        pushdown(o);
+        if (l == r) return l;
+        int mid = (l + r) &gt;&gt; 1;
+        if (val[lson] &gt;= want) return search(want, l, mid, lson);
+        else if (rmax[lson] + lmax[rson] &gt;= want) return mid - rmax[lson] + 1;
+        else if (val[rson] &gt;= want) return search(want, mid + 1, r, rson);
+        else return 0;
+    }
+    void change(bool type, int cl, int cr, int l, int r, int o) {
+        pushdown(o);
+        if (cl &lt;= l and cr &gt;= r) {
+            val[o] = lmax[o] = rmax[o] = type ? len[o] : 0;
+            lazy[o] = int(type) + 1;
+            return;
+        }
+        if (cr &lt; l or cl &gt; r) return;
+        else {
+            int mid = (l + r) &gt;&gt; 1;
+            change(type, cl, cr, l, mid, lson);
+            change(type, cl, cr, mid + 1, r, rson);
+            pushup(o);
+        }
+    }
+} seg；
+int main() {
+    int n, m;
+    scanf(&quot;%d %d&quot;, &amp;n, &amp;m);
+    seg.build(0, n, 0);
+    for (int i = 0; i &lt; m; i++) {
+        int k, a;
+        scanf(&quot;%d %d&quot;, &amp;k, &amp;a);
+        if (k == 1) {
+            if (seg.val[1] &gt;= a) {
+                int s = seg.search(a, 0, n, 0);
+                printf(&quot;%d\n&quot;, s);
+                seg.change(0, s, s + a - 1, 0, n, 0);
+            }
+            else {
+                printf(&quot;0\n&quot;);
+            }
+        }
+        else {
+            int b;
+            scanf(&quot;%d&quot;, &amp;b);
+            seg.change(1, a, a + b - 1, 0, n, 0);
+        }
+    }
+    return 0;
+}
+</code></pre>
+<p>然而我埋了几个坑</p>
+<p>直接提交会发现</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.luogu.com.cn/upload/image_hosting/gpxonk13.png" alt="" loading="lazy"></figure>
+<p>即使你改了 CE 也不能过的，乖乖自己写吧（光速逃 + 切勿谔谔）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[图论]]></title>
         <id>https://yinjun2024.github.io/post/tu-lun/</id>
