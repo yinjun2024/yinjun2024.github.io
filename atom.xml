@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-04-23T07:54:46.992Z</updated>
+    <updated>2020-04-23T07:58:18.065Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -994,7 +994,10 @@ int main() {
         <link href="https://yinjun2024.github.io/post/you-lian-friend/">
         </link>
         <updated>2020-04-21T11:11:18.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="排名不分先后啦-大家都是大佬哦qwq">排名不分先后啦 大家都是大佬哦qwq</h3>
+]]></summary>
         <content type="html"><![CDATA[<h3 id="排名不分先后啦-大家都是大佬哦qwq">排名不分先后啦 大家都是大佬哦qwq</h3>
+<!-- more -->
 <hr>
 <ol>
 <li>GMQ大佬：<a href="https://gaomaoqi.github.io/">GMQ大佬的博客传送门</a></li>
@@ -1030,6 +1033,9 @@ int main() {
 <p>题目</p>
 <p>4.1. 1615 -- 【RMQ练习】奶牛排队（USACO 2007 January Gold）2591</p>
 </li>
+<li>
+<p>鸣谢</p>
+</li>
 </ol>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="目录">目录</h2>
@@ -1046,6 +1052,9 @@ int main() {
 <li>
 <p>题目</p>
 <p>4.1. 1615 -- 【RMQ练习】奶牛排队（USACO 2007 January Gold）2591</p>
+</li>
+<li>
+<p>鸣谢</p>
 </li>
 </ol>
 <!-- more -->
@@ -1135,6 +1144,13 @@ int main() {
 	return 0;
 }
 </code></pre>
+<h2 id="5-鸣谢"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span>  鸣谢</h2>
+<figure data-type="image" tabindex="2"><img src="https://s1.ax1x.com/2020/04/01/G8HP0O.jpg" alt="G8HP0O.jpg" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://s1.ax1x.com/2020/04/01/G8H3NQ.jpg" alt="G8H3NQ.jpg" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2856233810,3053808556&amp;fm=26&amp;gp=0.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://cdn.luogu.com.cn/fe/logo.png?35e6d0796eab39c4bf304d03e6d332c0" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://s1.ax1x.com/2020/04/02/GGWSKg.png" alt="GGWSKg.png" loading="lazy"></figure>
+<p>完结！！！</p>
 ]]></content>
     </entry>
     <entry>
