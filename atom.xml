@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-04-22T13:51:54.601Z</updated>
+    <updated>2020-04-23T07:53:46.173Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -16,7 +16,10 @@
         <link href="https://yinjun2024.github.io/post/lg2894-usaco08febhotel-g/">
         </link>
         <updated>2020-04-21T11:17:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>Links: <a href="https://www.luogu.com.cn/problem/P2894">Here</a></p>
+]]></summary>
         <content type="html"><![CDATA[<p>Links: <a href="https://www.luogu.com.cn/problem/P2894">Here</a></p>
+<!-- more -->
 <p>这道题是一道线段树的题目。</p>
 <p>乍一看，修改还好修改，只是...</p>
 <p>...查询是什么鬼？</p>
@@ -146,6 +149,14 @@ int main() {
         <link href="https://yinjun2024.github.io/post/tu-lun/">
         </link>
         <updated>2020-04-21T11:15:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>欢迎大佬<s>踩爆</s>欣赏</p>
+<h2 id="前记">前记</h2>
+<p>在2020-03-16这个神奇的日子。</p>
+<p>我认识了lmpp(撤销)、hcq、gmq等巨佬。</p>
+<p><s>熟悉了did的性格</s></p>
+<p>作为一位C2024的同学...</p>
+<p>...一定要加油啊！！！</p>
+]]></summary>
         <content type="html"><![CDATA[<p>欢迎大佬<s>踩爆</s>欣赏</p>
 <h2 id="前记">前记</h2>
 <p>在2020-03-16这个神奇的日子。</p>
@@ -153,6 +164,7 @@ int main() {
 <p><s>熟悉了did的性格</s></p>
 <p>作为一位C2024的同学...</p>
 <p>...一定要加油啊！！！</p>
+<!-- more -->
 <h2 id="目录">目录</h2>
 <ol>
 <li>
@@ -910,7 +922,10 @@ int main() {
         <link href="https://yinjun2024.github.io/post/2020-nian-04-yue-01-ri/">
         </link>
         <updated>2020-04-21T11:11:50.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="woc我棕了">woc我棕了！！！</h2>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="woc我棕了">woc我棕了！！！</h2>
+<!-- more -->
 <figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2020/04/01/G1JFC8.png" alt="G1JFC8.png" loading="lazy"></figure>
 <h2 id="作弊者大骂管理员几率10101">作弊者大骂管理员(几率10%*10%=1%)</h2>
 <figure data-type="image" tabindex="2"><img src="https://cdn.luogu.com.cn/upload/image_hosting/gomp9gnj.png" alt="" loading="lazy"></figure>
@@ -964,6 +979,23 @@ int main() {
         <link href="https://yinjun2024.github.io/post/rmq/">
         </link>
         <updated>2020-04-21T11:10:39.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="目录">目录</h2>
+<ol>
+<li>
+<p>简介</p>
+</li>
+<li>
+<p>浅析倍增</p>
+</li>
+<li>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">ST</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span>表算法</p>
+</li>
+<li>
+<p>题目</p>
+<p>4.1. 1615 -- 【RMQ练习】奶牛排队（USACO 2007 January Gold）2591</p>
+</li>
+</ol>
+]]></summary>
         <content type="html"><![CDATA[<h2 id="目录">目录</h2>
 <ol>
 <li>
@@ -980,6 +1012,7 @@ int main() {
 <p>4.1. 1615 -- 【RMQ练习】奶牛排队（USACO 2007 January Gold）2591</p>
 </li>
 </ol>
+<!-- more -->
 <h2 id="1-简介"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 简介</h2>
 <p>RMQ问题(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>e</mi><mtext> </mtext><mi>M</mi><mi>i</mi><mi>n</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>m</mi><mi mathvariant="normal">/</mi><mi>M</mi><mi>a</mi><mi>x</mi><mi>i</mi><mi>n</mi><mi>u</mi><mi>m</mi><mtext> </mtext><mi>Q</mi><mi>u</mi><mi>e</mi><mi>r</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">Range\space Mininum/Maxinum\space Query</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">e</span><span class="mspace"> </span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span><span class="mspace"> </span><span class="mord mathdefault">Q</span><span class="mord mathdefault">u</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span>)，就是求一系列区间的最大/最小值(静态)，我们应该首选ST表算法，但在此之前，我们应该了解倍增算法</p>
 <h2 id="2-浅析倍增"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 浅析倍增</h2>
@@ -1076,19 +1109,15 @@ int main() {
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>本文为Gridea的默认文章，我不想删除，因为可能还有人需要帮助。</p>
 <p>想要搭建博客的文章，想我要吧qwq</p>
-<hr>
-<p>以下是原文</p>
-<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>本文为Gridea的默认文章，我不想删除，因为可能还有人需要帮助。</p>
 <p>想要搭建博客的文章，想我要吧qwq</p>
+<!-- more -->
 <hr>
 <p>以下是原文</p>
 <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
+<a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
 <a href="http://fehey.com/">示例网站</a></p>
 <h2 id="特性">特性👇</h2>
