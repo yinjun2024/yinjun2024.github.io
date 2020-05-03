@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-05-03T07:30:50.041Z</updated>
+    <updated>2020-05-03T07:33:30.907Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -1151,6 +1151,35 @@ int main() {
 <figure data-type="image" tabindex="5"><img src="https://cdn.luogu.com.cn/fe/logo.png?35e6d0796eab39c4bf304d03e6d332c0" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="6"><img src="https://s1.ax1x.com/2020/04/02/GGWSKg.png" alt="GGWSKg.png" loading="lazy"></figure>
 <p>完结！！！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://yinjun2024.github.io/post/about/</id>
+        <link href="https://yinjun2024.github.io/post/about/">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<p><strong>记得，最好每天及时按下&quot;Ctrl+Shift+R&quot;以重新缓冲备份，获得更加体验</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<p><strong>记得，最好每天及时按下&quot;Ctrl+Shift+R&quot;以重新缓冲备份，获得更加体验</strong></p>
+<!-- more -->
+<h2 id="关于本站">🏠 关于本站</h2>
+<p>这个是yinjun2024的Gridea&amp;&amp;Github小站，如果想得到更多的资源，请移步至luogu博客，详见友链</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>就是我——yinjun2024呀</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>OI，架子鼓，AW(这是爱好吗？)</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>我的QQ:2829853731</p>
+<p>我的luogu:109114</p>
+<p>我的github:yinjun2024</p>
+<p>我的。。。没了</p>
 ]]></content>
     </entry>
 </feed>
