@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>yinjun2024的Gridea Blog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1588593569651">
+<link rel="shortcut icon" href="/favicon.ico?v=1588599468321">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -18,7 +18,7 @@
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/androidstudio.css"
+<link href="/media/hljs/styles/vs.css"
   rel="stylesheet">
 
 <script src="/media/hljs/highlight.js"></script>
@@ -197,6 +197,13 @@
     </div>
   </div>
   
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://yinjun2024.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
     
   
   
@@ -1051,7 +1058,7 @@
   }
 
   // 链接跳转
-  let newWindow = 'false'
+  let newWindow = 'true'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
