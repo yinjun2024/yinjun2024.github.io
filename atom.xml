@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-05-04T13:48:20.407Z</updated>
+    <updated>2020-05-04T15:06:05.622Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -1162,12 +1162,12 @@ int main() {
         <summary type="html"><![CDATA[<blockquote>
 <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 </blockquote>
-<p><strong>记得，最好每天及时按下&quot;Ctrl+Shift+R&quot;以重新缓冲备份，获得更加体验</strong></p>
+<p><strong>记得，最好每天及时按下&quot;Ctrl+Shift+R&quot;以重新缓冲备份，获得更加体验(实测2~3分钟)</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 </blockquote>
-<p><strong>记得，最好每天及时按下&quot;Ctrl+Shift+R&quot;以重新缓冲备份，获得更加体验</strong></p>
+<p><strong>记得，最好每天及时按下&quot;Ctrl+Shift+R&quot;以重新缓冲备份，获得更加体验(实测2~3分钟)</strong></p>
 <!-- more -->
 <h2 id="关于本站">🏠 关于本站</h2>
 <p>这个是yinjun2024的Gridea&amp;&amp;Github小站，如果想得到更多的资源，请移步至luogu博客，详见友链</p>
