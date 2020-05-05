@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>yinjun2024的Gridea Blog</title>
+<title>LG2894——[USACO08FEB]Hotel G | yinjun2024的Gridea Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1588654316992">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -34,7 +34,8 @@
 
 
 
-  <meta name="description" content="温故而知新">
+  <meta name="description" content="LG2894——[USACO08FEB]Hotel G" />
+  <meta name="keywords" content="题解,luogu" />
 </head>
 
 <body>
@@ -83,7 +84,7 @@
             
               
             
-            <li class="nav-item nav-item-active">
+            <li class="nav-item ">
               
               
                 <a href="/archives/" target="_self">
@@ -160,10 +161,25 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  gemini">
+      class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -211,141 +227,302 @@
 
 
 </div>
+          
+        
+      </div>
+    </div>
+  
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
-      }
-    });
-  }
-  </script>
-        <div class="section-box box-shadow-wrapper">
-          <section class="section archives-section bg-color posts-expand">
-            
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
 
-<div class="bg-color">
-  <div class="archive-timeline-box">
-    <div class="archive-timeline-title">
-      
-        <h2>非常好！目前共计6篇日志，继续努力！</h2>
-      
-    </div>
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://yinjun2024.github.io/post/101010001001110101101101001000/">
+      LG2894——[USACO08FEB]Hotel G
+    </a>
+  </h1>
+  <div class="post-meta">
     
-      
-      
-        <div class="node-title">
-          <h2 class="tag-year">2020</h2>
-        </div>    
-        
-      
-      <a href="https://yinjun2024.github.io/post/101010001001110101101101001000/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              04-21
-              <small>LG2894——[USACO08FEB]Hotel G</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-04-21</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
     
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
       
       
-      <a href="https://yinjun2024.github.io/post/100111000001110110111100011111/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              04-21
-              <small>图论</small>
-            </h1>
-          </div>  
-      </div>
+      <a href="https://yinjun2024.github.io/tag/BZ3Z_CqCc/">
+        <span>题解</span>
+      </a>、
+      
+      
+      
+      <a href="https://yinjun2024.github.io/tag/0Gm9CZ0FFy/">
+        <span>luogu</span>
       </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
     
-      
-      
-      <a href="https://yinjun2024.github.io/post/1001101000011101111010001/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              04-21
-              <small>2020年04月01日</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
-    
-      
-      
-      <a href="https://yinjun2024.github.io/post/friend/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              04-21
-              <small>友链(Friend)</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
-    
-      
-      
-      <a href="https://yinjun2024.github.io/post/1111010101001100010/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              04-21
-              <small>RMQ</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
-    
-      
-      
-        <div class="node-title">
-          <h2 class="tag-year">2019</h2>
-        </div>    
-        
-      
-      <a href="https://yinjun2024.github.io/post/about/">
-        <div class="motion-warpper tag-archive-node">
-          <div class="tag-node">
-            <h1>
-              01-25
-              <small>关于</small>
-            </h1>
-          </div>  
-      </div>
-      </a>
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>5分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>771<span class="pc-show">字数</span></span>
+    </span>
     
   </div>
-  
-<div class="page bg-color">
-  <ul class="pagination-ul">
-    
-    
-      
-        <li class="pagination-li pagination-active">
-            <a href="/archives/page/../">
-              1
-            </a>
-        </li>
-      
-    
-    
-  </ul>
-</div>
-</div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <p>Links: <a href="https://www.luogu.com.cn/problem/P2894">Here</a></p>
+<!-- more -->
+<p>这道题是一道线段树的题目。</p>
+<p>乍一看，修改还好修改，只是...</p>
+<p>...查询是什么鬼？</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/46mbvqdh.png" alt="" loading="lazy"></figure>
+<p>题目是要查询长度大于 n 的连续空房区间。</p>
+<p>那么我们定义 <code>val[]</code> 为区间内的最大空房。</p>
+<p>我们可以考虑维护：</p>
+<ol>
+<li>区间内从左边开始的最长连续空房区间的长度(<code>lmax[]</code>)。</li>
+<li>区间内从右边开始的最长连续空房区间的长度(<code>rmax[]</code>)。</li>
+</ol>
+<p>查询时，我们可以：</p>
+<ol>
+<li>只从区间左子树查询(<code>val[lson]</code>)，如 <code>* 0 0 *|* * * *</code>。</li>
+<li>只从区间右子树查询(<code>val[rson]</code>)，如 <code>* * * *|* 0 0 *</code>。</li>
+<li>查询的区间跨越了中线(<code>rmax[lson] + lmax[rson]</code>)，如 <code>* * 0 0|0 * * *</code>。</li>
+</ol>
+<p>答案就是<strong>符合要求时</strong>按顺序查询：</p>
+<pre><code class="language-cpp">if (val[lson] &gt;= want) return search(want, l, mid, lson);
+else if (rmax[lson] + lmax[rson] &gt;= want) return mid - rmax[lson] + 1;
+else if (val[rson] &gt;= want) return search(want, mid + 1, r, rson);
+else return 0;
 
-          </section>
+</code></pre>
+<p>在<s>个人的</s>代码中，<code>lazy[o] == 1</code> 代表清空区间，<code>lazy[o] == 2</code>代表填满区间。（<code>lazy[o] == 0</code> 不需要说了吧...）</p>
+<p>再注意一下 <code>pushdown</code> 下推懒标记操作就可以了：</p>
+<pre><code class="language-cpp">void pushdown(int o) {
+    if (lazy[o]) {
+        lmax[lson] = rmax[lson] = val[lson] = lazy[o] == 1 ? 0 : len[lson];
+        lmax[rson] = rmax[rson] = val[rson] = lazy[o] == 1 ? 0 : len[rson];
+        lazy[lson] = lazy[rson] = lazy[o];
+    }
+    lazy[o] = 0;
+}
+</code></pre>
+<p>完整代码：</p>
+<pre><code class="language-cpp">#include &lt;cstdio&gt;
+#include &lt;algorithm&gt;
+#define lson o &lt;&lt; 1
+#define rson (o &lt;&lt; 1) | 1
+using namespace std;
+const int MAXN = 50001;
+struct SegmentTree {
+    int val[MAXN &lt;&lt; 2]， len[MAXN &lt;&lt; 2], lmax[MAXN &lt;&lt; 2], rmax[MAXN &lt;&lt; 2], lazy[MAXN &lt;&lt; 2];
+    void pushup(int o) {
+        lmax[o] = val[lson] == len[lson] ? len[lson] + lmax[rson] : lmax[lson];
+        rmax[o] = val[rson] == len[rson] ? len[rson] + rmax[lson] ： rmax[rson];
+        val[o] = max(max(val[lson], val[rson]), rmax[lson] + lmax[rson]);
+    }
+    void pushdown(int o) {
+        if (lazy[o]) {
+            lmax[lson] = rmax[lson] = val[lson] = lazy[o] == 1 ? 0 : len[lson];
+            lmax[rson] = rmax[rson] = val[rson] = lazy[o] == 1 ? 0 : len[rson];
+            lazy[lson] = lazy[rson] = lazy[o];
+        }
+        lazy[o] = 0;
+    }
+    void build(int l, int r, int o) {
+        val[o] = len[o] = lmax[o] = rmax[o] = r - l + 1;
+        lazy[o] = 0;
+        if (l != r) {
+            int mid = (l + r) &gt;&gt; 1;
+            build(l, mid, lson);
+            build(mid + 1, r, rson);
+        }
+    }
+    int search(int want, int l, int r, int o) {
+        pushdown(o);
+        if (l == r) return l;
+        int mid = (l + r) &gt;&gt; 1;
+        if (val[lson] &gt;= want) return search(want, l, mid, lson);
+        else if (rmax[lson] + lmax[rson] &gt;= want) return mid - rmax[lson] + 1;
+        else if (val[rson] &gt;= want) return search(want, mid + 1, r, rson);
+        else return 0;
+    }
+    void change(bool type, int cl, int cr, int l, int r, int o) {
+        pushdown(o);
+        if (cl &lt;= l and cr &gt;= r) {
+            val[o] = lmax[o] = rmax[o] = type ? len[o] : 0;
+            lazy[o] = int(type) + 1;
+            return;
+        }
+        if (cr &lt; l or cl &gt; r) return;
+        else {
+            int mid = (l + r) &gt;&gt; 1;
+            change(type, cl, cr, l, mid, lson);
+            change(type, cl, cr, mid + 1, r, rson);
+            pushup(o);
+        }
+    }
+} seg；
+int main() {
+    int n, m;
+    scanf(&quot;%d %d&quot;, &amp;n, &amp;m);
+    seg.build(0, n, 0);
+    for (int i = 0; i &lt; m; i++) {
+        int k, a;
+        scanf(&quot;%d %d&quot;, &amp;k, &amp;a);
+        if (k == 1) {
+            if (seg.val[1] &gt;= a) {
+                int s = seg.search(a, 0, n, 0);
+                printf(&quot;%d\n&quot;, s);
+                seg.change(0, s, s + a - 1, 0, n, 0);
+            }
+            else {
+                printf(&quot;0\n&quot;);
+            }
+        }
+        else {
+            int b;
+            scanf(&quot;%d&quot;, &amp;b);
+            seg.change(1, a, a + b - 1, 0, n, 0);
+        }
+    }
+    return 0;
+}
+</code></pre>
+<p>然而我埋了几个坑</p>
+<p>直接提交会发现</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.luogu.com.cn/upload/image_hosting/gpxonk13.png" alt="" loading="lazy"></figure>
+<p>即使你改了 CE 也不能过的，乖乖自己写吧（光速逃 + 切勿谔谔）</p>
+
+            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      yinjun2024
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://yinjun2024.github.io/post/101010001001110101101101001000/" title="LG2894——[USACO08FEB]Hotel G">https://yinjun2024.github.io/post/101010001001110101101101001000/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://yinjun2024.github.io/tag/BZ3Z_CqCc/"># 题解</a>
+    
+      <a href="https://yinjun2024.github.io/tag/0Gm9CZ0FFy/"># luogu</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="图论" href="https://yinjun2024.github.io/post/100111000001110110111100011111/">图论</a>
+        <a class="nav-mobile-next" title="图论" href="https://yinjun2024.github.io/post/100111000001110110111100011111/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -1059,6 +1236,36 @@
   // 代码高亮
   hljs.initHighlightingOnLoad();
 
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
 </script>
   </div>
 </body>
@@ -2269,6 +2476,5 @@ int main() {
 
 
 <script src=" /media/js/cool.js"></script>
-
 
 </html>
