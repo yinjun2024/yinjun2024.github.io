@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-05-05T04:52:06.504Z</updated>
+    <updated>2020-05-06T14:50:40.375Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>精于心，简于形</subtitle>
     <logo>https://yinjun2024.github.io/images/avatar.png</logo>
     <icon>https://yinjun2024.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, yinjun2024的Gridea Blog</rights>
@@ -1014,8 +1014,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[RMQ]]></title>
-        <id>https://yinjun2024.github.io/post/1111010101001100010/</id>
-        <link href="https://yinjun2024.github.io/post/1111010101001100010/">
+        <id>https://yinjun2024.github.io/post/none1/</id>
+        <link href="https://yinjun2024.github.io/post/none1/">
         </link>
         <updated>2020-04-21T11:10:39.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="目录">目录</h2>
@@ -1155,8 +1155,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
-        <id>https://yinjun2024.github.io/post/about/</id>
-        <link href="https://yinjun2024.github.io/post/about/">
+        <id>https://yinjun2024.github.io/post/0000000000/</id>
+        <link href="https://yinjun2024.github.io/post/0000000000/">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -1174,12 +1174,14 @@ int main() {
 <h2 id="博主是谁">👨‍💻 博主是谁</h2>
 <p>就是我——yinjun2024呀</p>
 <h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>OI，架子鼓，AW(这是爱好吗？)</p>
+<p>OI，架子鼓，AW(这是爱好吗?)</p>
 <h2 id="联系我呀">📬 联系我呀</h2>
 <p>我的QQ:2829853731</p>
 <p>我的luogu:109114</p>
 <p>我的github:yinjun2024</p>
 <p>我的。。。没了</p>
+<h2 id="关于url">❓ 关于URL</h2>
+<p>每一个文章都有一个十位纯随机01URL(除了这篇文章)，下次记文章可以对应手指哟（逃</p>
 ]]></content>
     </entry>
 </feed>
