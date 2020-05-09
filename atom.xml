@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-05-06T14:50:40.375Z</updated>
+    <updated>2020-05-09T12:20:05.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -990,8 +990,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[友链(Friend)]]></title>
-        <id>https://yinjun2024.github.io/post/friend/</id>
-        <link href="https://yinjun2024.github.io/post/friend/">
+        <id>https://yinjun2024.github.io/post/0000000001/</id>
+        <link href="https://yinjun2024.github.io/post/0000000001/">
         </link>
         <updated>2020-04-21T11:11:18.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="排名不分先后啦-大家都是大佬哦qwq">排名不分先后啦 大家都是大佬哦qwq</h3>
