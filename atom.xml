@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yinjun2024.github.io</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-05-16T11:42:43.707Z</updated>
+    <updated>2020-05-17T04:59:45.279Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yinjun2024.github.io"/>
     <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
@@ -11,16 +11,17 @@
     <icon>https://yinjun2024.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, yinjun2024的Gridea Blog</rights>
     <entry>
-        <title type="html"><![CDATA[题解 AT2829 【転倒数】]]></title>
+        <title type="html"><![CDATA[题解 AT2829 『転倒数』]]></title>
         <id>https://yinjun2024.github.io/post/1001001101011/</id>
         <link href="https://yinjun2024.github.io/post/1001001101011/">
         </link>
         <updated>2020-05-16T11:41:37.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
+<p><s>我QQ前4位&quot;2829&quot;怎么与题目相同了？</s></p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[题解 P5057 【[CQOI2006]简单题】]]></title>
+        <title type="html"><![CDATA[题解 P5057 『[CQOI2006]简单题』]]></title>
         <id>https://yinjun2024.github.io/post/01001001011010110/</id>
         <link href="https://yinjun2024.github.io/post/01001001011010110/">
         </link>
@@ -135,7 +136,7 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[题解 P2894 【[USACO08FEB]Hotel G】]]></title>
+        <title type="html"><![CDATA[题解 P2894 『[USACO08FEB]Hotel G』]]></title>
         <id>https://yinjun2024.github.io/post/101010001001110101101101001000/</id>
         <link href="https://yinjun2024.github.io/post/101010001001110101101101001000/">
         </link>
@@ -268,7 +269,7 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[图论]]></title>
+        <title type="html"><![CDATA[『图论』]]></title>
         <id>https://yinjun2024.github.io/post/100111000001110110111100011111/</id>
         <link href="https://yinjun2024.github.io/post/100111000001110110111100011111/">
         </link>
@@ -1077,7 +1078,7 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020年04月01日]]></title>
+        <title type="html"><![CDATA[『2020年04月01日』]]></title>
         <id>https://yinjun2024.github.io/post/1001101000011101111010001/</id>
         <link href="https://yinjun2024.github.io/post/1001101000011101111010001/">
         </link>
@@ -1113,7 +1114,7 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[友链]]></title>
+        <title type="html"><![CDATA[『友链』]]></title>
         <id>https://yinjun2024.github.io/post/0000000001/</id>
         <link href="https://yinjun2024.github.io/post/0000000001/">
         </link>
@@ -1134,7 +1135,7 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[RMQ]]></title>
+        <title type="html"><![CDATA[『RMQ』]]></title>
         <id>https://yinjun2024.github.io/post/none1/</id>
         <link href="https://yinjun2024.github.io/post/none1/">
         </link>
@@ -1275,7 +1276,7 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[关于]]></title>
+        <title type="html"><![CDATA[『关于』]]></title>
         <id>https://yinjun2024.github.io/post/0000000000/</id>
         <link href="https://yinjun2024.github.io/post/0000000000/">
         </link>
