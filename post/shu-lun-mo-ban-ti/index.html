@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="精于心，简于形">
 <meta name="theme-color" content="#000">
-<title>yinjun2024的Gridea Blog</title>
+<title>『数论模板题』 | yinjun2024的Gridea Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1594565244282">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -38,6 +38,8 @@
 
 
 
+  <meta name="description" content="『数论模板题』" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -170,10 +172,26 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  gemini">
+      class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -221,108 +239,575 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E6%95%B0%E8%AE%BA%E6%A8%A1%E6%9D%BF%E9%A2%98">数论模板题</a>
+<ul>
+<li><a href="#font-color-52c41afont-p1226-%E6%A8%A1%E6%9D%BF%E5%BF%AB%E9%80%9F%E5%B9%82%E5%8F%96%E4%BD%99%E8%BF%90%E7%AE%97"><font color = #52c41a>√</font> P1226 【模板】快速幂||取余运算</a></li>
+<li><a href="#font-color-52c41afont-p3811-%E6%A8%A1%E6%9D%BF%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83"><font color = #52c41a>√</font> P3811 【模板】乘法逆元</a></li>
+<li><a href="#font-color-52c41afont-p1939-%E6%A8%A1%E6%9D%BF%E7%9F%A9%E9%98%B5%E5%8A%A0%E9%80%9F%E6%95%B0%E5%88%97"><font color = #52c41a>√</font> P1939 【模板】矩阵加速/数列</a></li>
+<li><a href="#font-color-7a7a7a-font-p3390-%E6%A8%A1%E6%9D%BF%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82"><font color = #7a7a7a>-</font> P3390 【模板】矩阵快速幂</a></li>
+<li><a href="#font-color-7a7a7a-font-p4549-%E6%A8%A1%E6%9D%BF%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86"><font color = #7a7a7a>-</font> P4549 【模板】裴蜀定理</a></li>
+<li><a href="#font-color-7a7a7a-font-p5431-%E6%A8%A1%E6%9D%BF%E4%B9%98%E6%B3%95%E9%80%86%E5%85%832"><font color = #7a7a7a>-</font> P5431 【模板】乘法逆元2</a></li>
+<li><a href="#font-color-7a7a7a-font-p2613-%E6%A8%A1%E6%9D%BF%E6%9C%89%E7%90%86%E6%95%B0%E5%8F%96%E4%BD%99"><font color = #7a7a7a>-</font> P2613 【模板】有理数取余</a></li>
+<li>[<font color = #7a7a7a>-</font> P2252 <a href="https://www.luogu.com.cn/problem/P2252">【模板】威佐夫博弈/[SHOI2002]取石子游戏</a>](#font-color-7a7a7a-font-p2252-模板威佐夫博弈shoi2002取石子游戏)</li>
+<li><a href="#font-color-7a7a7a-font-p5656-%E6%A8%A1%E6%9D%BF%E4%BA%8C%E5%85%83%E4%B8%80%E6%AC%A1%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8Bexgcd"><font color = #7a7a7a>-</font> P5656 【模板】二元一次不定方程(exgcd)</a></li>
+<li><a href="#font-color-7a7a7a-font-p6091-%E6%A8%A1%E6%9D%BF%E5%8E%9F%E6%A0%B9"><font color = #7a7a7a>-</font> P6091 【模板】原根</a></li>
+<li><a href="#font-color-7a7a7a-font-p4781-%E6%A8%A1%E6%9D%BF%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC"><font color = #7a7a7a>-</font> P4781 【模板】拉格朗日插值</a></li>
+<li><a href="#font-color-7a7a7a-font-p1495-%E6%A8%A1%E6%9D%BF%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86crt%E6%9B%B9%E5%86%B2%E5%85%BB%E7%8C%AA"><font color = #7a7a7a>-</font> P1495 【模板】中国剩余定理(CRT)/曹冲养猪</a></li>
+<li><a href="#font-color-7a7a7a-font-p4783-%E6%A8%A1%E6%9D%BF%E7%9F%A9%E9%98%B5%E6%B1%82%E9%80%86"><font color = #7a7a7a>-</font> P4783 【模板】矩阵求逆</a></li>
+<li><a href="#font-color-7a7a7a-font-p5091-%E6%A8%A1%E6%9D%BF%E6%89%A9%E5%B1%95%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86"><font color = #7a7a7a>-</font> P5091 【模板】扩展欧拉定理</a></li>
+<li><a href="#font-color-7a7a7a-font-p4213-%E6%A8%A1%E6%9D%BF%E6%9D%9C%E6%95%99%E7%AD%9Bsum"><font color = #7a7a7a>-</font> P4213 【模板】杜教筛（Sum）</a></li>
+<li><a href="#font-color-7a7a7a-font-p4717-%E6%A8%A1%E6%9D%BF%E5%BF%AB%E9%80%9F%E6%B2%83%E5%B0%94%E4%BB%80%E5%8F%98%E6%8D%A2-fwt"><font color = #7a7a7a>-</font> P4717 【模板】快速沃尔什变换 (FWT)</a></li>
+<li><a href="#font-color-7a7a7a-font-p4526-%E6%A8%A1%E6%9D%BF%E8%87%AA%E9%80%82%E5%BA%94%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%B3%952"><font color = #7a7a7a>-</font> P4526 【模板】自适应辛普森法2</a></li>
+<li><a href="#font-color-7a7a7a-font-p4725-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E5%A4%9A%E9%A1%B9%E5%BC%8F-ln"><font color = #7a7a7a>-</font> P4725 【模板】多项式对数函数（多项式 ln）</a></li>
+<li><a href="#font-color-7a7a7a-font-p4718-%E6%A8%A1%E6%9D%BFpollard-rho%E7%AE%97%E6%B3%95"><font color = #7a7a7a>-</font> P4718 【模板】Pollard-Rho算法</a></li>
+<li><a href="#font-color-7a7a7a-font-p4525-%E6%A8%A1%E6%9D%BF%E8%87%AA%E9%80%82%E5%BA%94%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%B3%951"><font color = #7a7a7a>-</font> P4525 【模板】自适应辛普森法1</a></li>
+<li><a href="#font-color-7a7a7a-font-p4245-%E6%A8%A1%E6%9D%BF%E4%BB%BB%E6%84%8F%E6%A8%A1%E6%95%B0ntt"><font color = #7a7a7a>-</font> P4245 【模板】任意模数NTT</a></li>
+<li><a href="#font-color-7a7a7a-font-p4238-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E4%B9%98%E6%B3%95%E9%80%86"><font color = #7a7a7a>-</font> P4238 【模板】多项式乘法逆</a></li>
+<li><a href="#font-color-7a7a7a-font-p4980-%E6%A8%A1%E6%9D%BFpolya%E5%AE%9A%E7%90%86"><font color = #7a7a7a>-</font> P4980 【模板】Polya定理</a></li>
+<li><a href="#font-color-7a7a7a-font-p5273-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%B9%82%E5%87%BD%E6%95%B0-%E5%8A%A0%E5%BC%BA%E7%89%88"><font color = #7a7a7a>-</font> P5273 【模板】多项式幂函数 (加强版)</a></li>
+<li><a href="#font-color-7a7a7a-font-p5050-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%A4%9A%E7%82%B9%E6%B1%82%E5%80%BC"><font color = #7a7a7a>-</font> P5050 【模板】多项式多点求值</a></li>
+<li><a href="#font-color-e74c3cfont-p5282-%E6%A8%A1%E6%9D%BF%E5%BF%AB%E9%80%9F%E9%98%B6%E4%B9%98%E7%AE%97%E6%B3%95"><font color = #e74c3c>×</font> P5282 【模板】快速阶乘算法</a></li>
+<li><a href="#font-color-7a7a7a-fontp5325-%E6%A8%A1%E6%9D%BFmin_25%E7%AD%9B"><font color = #7a7a7a>-</font>P5325 【模板】Min_25筛</a></li>
+<li><a href="#font-color-7a7a7a-fontp5809-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%A4%8D%E5%90%88%E9%80%86"><font color = #7a7a7a>-</font>P5809 【模板】多项式复合逆</a></li>
+<li><a href="#font-color-7a7a7a-fontp5373-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0"><font color = #7a7a7a>-</font>P5373 【模板】多项式复合函数</a></li>
+<li><a href="#font-color-7a7a7a-fontp5808-%E6%A8%A1%E6%9D%BF%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%9D%9E%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E9%80%92%E6%8E%A8"><font color = #7a7a7a>-</font>P5808 【模板】常系数非齐次线性递推</a></li>
+<li><a href="#font-color-7a7a7a-fontp5668-%E6%A8%A1%E6%9D%BFn%E6%AC%A1%E5%89%A9%E4%BD%99"><font color = #7a7a7a>-</font>P5668 【模板】N次剩余</a></li>
+<li><a href="#font-color-7a7a7a-fontp5158-%E6%A8%A1%E6%9D%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%BF%AB%E9%80%9F%E6%8F%92%E5%80%BC"><font color = #7a7a7a>-</font>P5158 【模板】多项式快速插值</a></li>
+<li><a href="#font-color-7a7a7a-fontp6115-%E6%A8%A1%E6%9D%BF%E6%95%B4%E5%BC%8F%E9%80%92%E6%8E%A8"><font color = #7a7a7a>-</font>P6115 【模板】整式递推</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          Gridea
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
+          
+        
       </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://yinjun2024.github.io/post/shu-lun-mo-ban-ti/">
+      『数论模板题』
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span>2020-07-12</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>7<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>1150<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+    
+    
+    <span id="/post/shu-lun-mo-ban-ti/" data-flag-title="『数论模板题』" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <h1 id="数论模板题">数论模板题</h1>
+<h2 id="font-color-52c41afont-p1226-模板快速幂取余运算"><font color = #52c41a>√</font> P1226 <a href="https://www.luogu.com.cn/problem/P1226">【模板】快速幂||取余运算</a></h2>
+<p><strong><font color = #f39c11>普及-</font></strong></p>
+<pre><code class="language-cpp">#include &lt;cstdio&gt;
+long long qkpow(long long a, long long b, long long p) {
+	long long ans = 1;
+	while (b) {
+		if (b &amp; 1) ans = (ans * a) % p;
+		a = (a * a) % p;
+		b &gt;&gt;= 1;
+	}
+	return ans;
+}
+int main() {
+	long long a, b, p;
+	scanf(&quot;%lld %lld %lld&quot;, &amp;a, &amp;b, &amp;p);
+	if (b == 0) {
+		printf(&quot;%lld^0 mod %lld=0&quot;, a, p);
+		return 0;
+	}
+	long long pow = qkpow(a, b, p);
+	printf(&quot;%lld^%lld mod %lld=%lld&quot;, a, b, p, pow);
+	return 0;
+}
+</code></pre>
+<h2 id="font-color-52c41afont-p3811-模板乘法逆元"><font color = #52c41a>√</font> P3811 <a href="https://www.luogu.com.cn/problem/P3811">【模板】乘法逆元</a></h2>
+<p><strong><font color = #ffc116>普及/提高-</font></strong></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \mbox at position 54: …\rfloor * (p \ \̲m̲b̲o̲x̲{mod} \ a) ^ {-…'>a ^ {-1} \equiv - \lfloor \frac{p}{a} \rfloor * (p \ \mbox{mod} \ a) ^ {-1} \quad(\mbox{mod} \ p)
+</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \mbox at position 51: …\rfloor * (p \ \̲m̲b̲o̲x̲{mod} \ a) ^ {-…'>a ^ {-1} = \lfloor p - \frac{p}{a} \rfloor * (p \ \mbox{mod} \ a) ^ {-1} \ \mbox{mod} \ p
+</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+const int MAXN = 3e6+10;
+int n, p;
+long long int inv[MAXN];
+int main () {
+	scanf (&quot;%d %d&quot;, &amp;n, &amp;p);
+	inv[1] = 1;
+	puts(&quot;1&quot;);
+	for (int i = 2; i &lt;= n; i++) {
+		inv[i] = (p - p / i) * inv[p % i] % p;
+		printf(&quot;%d\n&quot;, inv[i]);
+	}
+	return 0;
+}
+</code></pre>
+<h2 id="font-color-52c41afont-p1939-模板矩阵加速数列"><font color = #52c41a>√</font> P1939 <a href="https://www.luogu.com.cn/problem/P1939">【模板】矩阵加速/数列</a></h2>
+<p><strong><font color = #ffc116>普及/提高-</font></strong></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mo fence="true">[</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>∗</mo><mrow><mo fence="true">[</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>=</mo><mrow><mo fence="true">[</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mi>x</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 1 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \end{bmatrix} * \begin{bmatrix} a_{x - 1} \\ a_{x - 2} \\ a_{x - 3} \end{bmatrix} = \begin{bmatrix} a_x \\ a_{x - 1} \\ a_{x - 2} \end{bmatrix}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow><mo fence="true">[</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow></msup><mo>∗</mo><mrow><mo fence="true">[</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo>=</mo><mrow><mo fence="true">[</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mi>x</mi></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msub></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 1 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \end{bmatrix}^{x - 3} * \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix} = \begin{bmatrix} a_x \\ a_{x - 1} \\ a_{x - 2} \end{bmatrix}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.804048em;vertical-align:-1.55002em;"></span><span class="minner"><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:2.254028em;"><span style="top:-4.5029200000000005em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<pre><code class="language-cpp">#include &lt;cstdio&gt;
+#include &lt;algorithm&gt;
+#include &lt;cstring&gt;
+using namespace std;
+const int MAXN = 3;
+const int mod = 1000000007;
+struct matrix {
+	long long arr[MAXN][MAXN];
+	int n, m;
+};
+matrix mul(matrix a, matrix b) {
+	matrix c;
+	memset(c.arr, 0, sizeof c.arr);
+	c.n = a.n;
+	c.m = b.m;
+	for (int i = 0; i &lt; c.n; i++) {
+		for (int j = 0; j &lt; c.m; j++) {
+			c.arr[i][j] = 0;
+			for (int k = 0; k &lt; a.m; k++) {
+				c.arr[i][j] += a.arr[i][k] * b.arr[k][j];
+				c.arr[i][j] = c.arr[i][j] % mod;
+			}
+		}
+	}
+	return c;
+}
+matrix qkpow(matrix a, int b) {
+	matrix ans;
+	ans.arr[0][0] = 1;
+	ans.arr[1][1] = 1;
+	ans.arr[2][2] = 1;
+	ans.arr[0][1] = 0;
+	ans.arr[1][0] = 0;
+	ans.arr[0][2] = 0;
+	ans.arr[1][2] = 0;
+	ans.arr[2][0] = 0;
+	ans.arr[2][1] = 0;
+	ans.n = 3;
+	ans.m = 3;
+	while (b) {
+		if (b &amp; 1) {
+			ans = mul(ans, a);
+		}
+		a = mul(a, a);
+		b &gt;&gt;= 1;
+	}
+	return ans;
+}
+int main() {
+	int T;
+	scanf(&quot;%d&quot;, &amp;T);
+	matrix typ;
+	typ.n = typ.m = 3;
+	typ.arr[0][0] = typ.arr[0][2] = typ.arr[1][0] = typ.arr[2][1] = 1;
+	typ.arr[0][1] = typ.arr[1][1] = typ.arr[1][2] = typ.arr[2][0] = typ.arr[2][2] = 0;
+	while (T--) {
+		int n;
+		scanf(&quot;%d&quot;, &amp;n);
+		if (n == 1 || n == 2 || n == 3) printf(&quot;1\n&quot;);
+		else {
+			matrix a = qkpow(typ, n - 3);
+			matrix tmp;
+			tmp.n = 3;
+			tmp.m = 1;
+			tmp.arr[0][0] = tmp.arr[1][0] = tmp.arr[2][0] = 1;
+			matrix b = mul(a, tmp);
+			printf(&quot;%lld\n&quot;, b.arr[0][0]);
+		}
+	}
+	return 0;
+}
+</code></pre>
+<h2 id="font-color-7a7a7a-font-p3390-模板矩阵快速幂"><font color = #7a7a7a>-</font> P3390 <a href="https://www.luogu.com.cn/problem/P3390">【模板】矩阵快速幂</a></h2>
+<p><strong><font color = #ffc116>普及/提高-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4549-模板裴蜀定理"><font color = #7a7a7a>-</font> P4549 <a href="https://www.luogu.com.cn/problem/P4549">【模板】裴蜀定理</a></h2>
+<p><strong><font color = #ffc116>普及/提高-</font></strong></p>
+<p>裴蜀定理：对于给定的正整数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span></span></span></span>, 方程<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">ax+by=c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>的充要条件为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>是<span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \mbox at position 1: \̲m̲b̲o̲x̲{gcd}(a,b)'>\mbox{gcd}(a,b)</span>的整数倍。</p>
+<p>拓展裴蜀定理：对于给定的若干个正整数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_1,a_2,\cdots,a_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, 方程<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><msub><mi>b</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a_1b_1+a_2b_2+\cdots+a_nb_n=c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>的充要条件为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>是<span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \mbox at position 1: \̲m̲b̲o̲x̲{gcd}(a_1,a_2,\…'>\mbox{gcd}(a_1,a_2,\cdots,a_n)</span>的整数倍。</p>
+<h2 id="font-color-7a7a7a-font-p5431-模板乘法逆元2"><font color = #7a7a7a>-</font> P5431 <a href="https://www.luogu.com.cn/problem/P5431">【模板】乘法逆元2</a></h2>
+<p><strong><font color = #61c41a>普及+/提高</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p2613-模板有理数取余"><font color = #7a7a7a>-</font> P2613 <a href="https://www.luogu.com.cn/problem/P2613">【模板】有理数取余</a></h2>
+<p><strong><font color = #61c41a>普及+/提高</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p2252-模板威佐夫博弈shoi2002取石子游戏"><font color = #7a7a7a>-</font> P2252 <a href="https://www.luogu.com.cn/problem/P2252">【模板】威佐夫博弈/[SHOI2002]取石子游戏</a></h2>
+<p><strong><font color = red>上海2002年省选</font></strong></p>
+<p><strong><font color = #61c41a>普及+/提高</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p5656-模板二元一次不定方程exgcd"><font color = #7a7a7a>-</font> P5656 <a href="https://www.luogu.com.cn/problem/P5656">【模板】二元一次不定方程(exgcd)</a></h2>
+<p><strong><font color = #61c41a>普及+/提高</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p6091-模板原根"><font color = #7a7a7a>-</font> P6091 <a href="https://www.luogu.com.cn/problem/P6091">【模板】原根</a></h2>
+<p><strong><font color = #3498db>提高+/省选-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4781-模板拉格朗日插值"><font color = #7a7a7a>-</font> P4781 <a href="https://www.luogu.com.cn/problem/P4781">【模板】拉格朗日插值</a></h2>
+<p><strong><font color = #3498db>提高+/省选-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p1495-模板中国剩余定理crt曹冲养猪"><font color = #7a7a7a>-</font> P1495 <a href="https://www.luogu.com.cn/problem/P1495">【模板】中国剩余定理(CRT)/曹冲养猪</a></h2>
+<p><strong><font color = #3498db>提高+/省选-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4783-模板矩阵求逆"><font color = #7a7a7a>-</font> P4783 <a href="https://www.luogu.com.cn/problem/P4783">【模板】矩阵求逆</a></h2>
+<p><strong><font color = #3498db>提高+/省选-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p5091-模板扩展欧拉定理"><font color = #7a7a7a>-</font> P5091 <a href="https://www.luogu.com.cn/problem/P5091">【模板】扩展欧拉定理</a></h2>
+<p><strong><font color = #3498db>提高+/省选-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4213-模板杜教筛sum"><font color = #7a7a7a>-</font> P4213 <a href="https://www.luogu.com.cn/problem/P4213">【模板】杜教筛（Sum）</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4717-模板快速沃尔什变换-fwt"><font color = #7a7a7a>-</font> P4717 <a href="https://www.luogu.com.cn/problem/P4717">【模板】快速沃尔什变换 (FWT)</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4526-模板自适应辛普森法2"><font color = #7a7a7a>-</font> P4526 <a href="https://www.luogu.com.cn/problem/P4526">【模板】自适应辛普森法2</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4725-模板多项式对数函数多项式-ln"><font color = #7a7a7a>-</font> P4725 <a href="https://www.luogu.com.cn/problem/P4725">【模板】多项式对数函数（多项式 ln）</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4718-模板pollard-rho算法"><font color = #7a7a7a>-</font> P4718 <a href="https://www.luogu.com.cn/problem/P4718">【模板】Pollard-Rho算法</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4525-模板自适应辛普森法1"><font color = #7a7a7a>-</font> P4525 <a href="https://www.luogu.com.cn/problem/P4525">【模板】自适应辛普森法1</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4245-模板任意模数ntt"><font color = #7a7a7a>-</font> P4245 <a href="https://www.luogu.com.cn/problem/P4245">【模板】任意模数NTT</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4238-模板多项式乘法逆"><font color = #7a7a7a>-</font> P4238 <a href="https://www.luogu.com.cn/problem/P4238">【模板】多项式乘法逆</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p4980-模板polya定理"><font color = #7a7a7a>-</font> P4980 <a href="https://www.luogu.com.cn/problem/P4980">【模板】Polya定理</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p5273-模板多项式幂函数-加强版"><font color = #7a7a7a>-</font> P5273 <a href="https://www.luogu.com.cn/problem/P5273">【模板】多项式幂函数 (加强版)</a></h2>
+<p><strong><font color = #9d3dcf>省选/NOI-</font></strong></p>
+<h2 id="font-color-7a7a7a-font-p5050-模板多项式多点求值"><font color = #7a7a7a>-</font> P5050 <a href="https://www.luogu.com.cn/problem/P5050">【模板】多项式多点求值</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-e74c3cfont-p5282-模板快速阶乘算法"><font color = #e74c3c>×</font> P5282 <a href="https://www.luogu.com.cn/problem/P5282">【模板】快速阶乘算法</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp5325-模板min_25筛"><font color = #7a7a7a>-</font>P5325 <a href="https://www.luogu.com.cn/problem/P5325">【模板】Min_25筛</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp5809-模板多项式复合逆"><font color = #7a7a7a>-</font>P5809 <a href="https://www.luogu.com.cn/problem/P5809">【模板】多项式复合逆</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp5373-模板多项式复合函数"><font color = #7a7a7a>-</font>P5373 <a href="https://www.luogu.com.cn/problem/P5373">【模板】多项式复合函数</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp5808-模板常系数非齐次线性递推"><font color = #7a7a7a>-</font>P5808 <a href="https://www.luogu.com.cn/problem/P5808">【模板】常系数非齐次线性递推</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp5668-模板n次剩余"><font color = #7a7a7a>-</font>P5668 <a href="https://www.luogu.com.cn/problem/P5668">【模板】N次剩余</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp5158-模板多项式快速插值"><font color = #7a7a7a>-</font>P5158 <a href="https://www.luogu.com.cn/problem/P5158">【模板】多项式快速插值</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+<h2 id="font-color-7a7a7a-fontp6115-模板整式递推"><font color = #7a7a7a>-</font>P6115 <a href="https://www.luogu.com.cn/problem/P6115">【模板】整式递推</a></h2>
+<p><strong><font color = #0e1d69>NOI/NOI+/CTSC</font></strong></p>
+
+            </div>
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      yinjun2024
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://yinjun2024.github.io/post/shu-lun-mo-ban-ti/" title="『数论模板题』">https://yinjun2024.github.io/post/shu-lun-mo-ban-ti/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
       
+    </div>
+    <div class="nav-next">
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://yinjun2024.github.io/post/1001101000011101111010001/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              04-21
-              <small>『2020年04月01日』</small>
-            </h1>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      <a href="https://yinjun2024.github.io/post/0000000001/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              04-21
-              <small>『友链』</small>
-            </h1>
-          </div>
-        </div>
-      </a>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://yinjun2024.github.io/post/0000000000/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              01-25
-              <small>『关于』</small>
-            </h1>
-          </div>
-        </div>
-      </a>
-      
-      
+        <a class="nav-pc-next" title="『有关矩阵』" href="https://yinjun2024.github.io/post/0100100110101/">『有关矩阵』</a>
+        <a class="nav-mobile-next" title="『有关矩阵』" href="https://yinjun2024.github.io/post/0100100110101/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -1043,6 +1528,36 @@
   // 代码高亮
   hljs.initHighlightingOnLoad();
 
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
 </script>
   </div>
 </body>
@@ -2935,6 +3450,5 @@ int main() {
 
 
 <script src=" /media/js/cool.js"></script>
-
 
 </html>
