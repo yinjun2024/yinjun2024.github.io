@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://yinjun2024.github.io</id>
+    <id>https://yinjun2024.cn</id>
     <title>yinjun2024的Gridea Blog</title>
-    <updated>2020-07-16T01:13:29.012Z</updated>
+    <updated>2020-07-16T02:10:32.886Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://yinjun2024.github.io"/>
-    <link rel="self" href="https://yinjun2024.github.io/atom.xml"/>
+    <link rel="alternate" href="https://yinjun2024.cn"/>
+    <link rel="self" href="https://yinjun2024.cn/atom.xml"/>
     <subtitle>精于心，简于形</subtitle>
-    <logo>https://yinjun2024.github.io/images/avatar.png</logo>
-    <icon>https://yinjun2024.github.io/favicon.ico</icon>
+    <logo>https://yinjun2024.cn/images/avatar.png</logo>
+    <icon>https://yinjun2024.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, yinjun2024的Gridea Blog</rights>
     <entry>
         <title type="html"><![CDATA[『数论模板题』]]></title>
-        <id>https://yinjun2024.github.io/post/shu-lun-mo-ban-ti/</id>
-        <link href="https://yinjun2024.github.io/post/shu-lun-mo-ban-ti/">
+        <id>https://yinjun2024.cn/post/shu-lun-mo-ban-ti/</id>
+        <link href="https://yinjun2024.cn/post/shu-lun-mo-ban-ti/">
         </link>
         <updated>2020-07-12T14:45:49.000Z</updated>
         <content type="html"><![CDATA[<h1 id="数论模板题">数论模板题</h1>
@@ -208,8 +208,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[『有关矩阵』]]></title>
-        <id>https://yinjun2024.github.io/post/0100100110101/</id>
-        <link href="https://yinjun2024.github.io/post/0100100110101/">
+        <id>https://yinjun2024.cn/post/0100100110101/</id>
+        <link href="https://yinjun2024.cn/post/0100100110101/">
         </link>
         <updated>2020-05-22T15:23:29.000Z</updated>
         <content type="html"><![CDATA[<h2 id="矩阵乘法">矩阵乘法</h2>
@@ -429,8 +429,8 @@ matrix mul(matrix a, matrix b) {
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 AT2829 『転倒数』]]></title>
-        <id>https://yinjun2024.github.io/post/1001001101011/</id>
-        <link href="https://yinjun2024.github.io/post/1001001101011/">
+        <id>https://yinjun2024.cn/post/1001001101011/</id>
+        <link href="https://yinjun2024.cn/post/1001001101011/">
         </link>
         <updated>2020-05-16T11:41:37.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -439,8 +439,8 @@ matrix mul(matrix a, matrix b) {
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 P5057 『[CQOI2006]简单题』]]></title>
-        <id>https://yinjun2024.github.io/post/01001001011010110/</id>
-        <link href="https://yinjun2024.github.io/post/01001001011010110/">
+        <id>https://yinjun2024.cn/post/01001001011010110/</id>
+        <link href="https://yinjun2024.cn/post/01001001011010110/">
         </link>
         <updated>2020-05-16T11:40:10.000Z</updated>
         <summary type="html"><![CDATA[<p>Link: <a href="https://www.luogu.com.cn/problem/P5057">here</a></p>
@@ -554,8 +554,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 P2894 『[USACO08FEB]Hotel G』]]></title>
-        <id>https://yinjun2024.github.io/post/101010001001110101101101001000/</id>
-        <link href="https://yinjun2024.github.io/post/101010001001110101101101001000/">
+        <id>https://yinjun2024.cn/post/101010001001110101101101001000/</id>
+        <link href="https://yinjun2024.cn/post/101010001001110101101101001000/">
         </link>
         <updated>2020-04-21T11:17:11.000Z</updated>
         <summary type="html"><![CDATA[<p>Links: <a href="https://www.luogu.com.cn/problem/P2894">Here</a></p>
@@ -687,8 +687,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[『图论』]]></title>
-        <id>https://yinjun2024.github.io/post/100111000001110110111100011111/</id>
-        <link href="https://yinjun2024.github.io/post/100111000001110110111100011111/">
+        <id>https://yinjun2024.cn/post/100111000001110110111100011111/</id>
+        <link href="https://yinjun2024.cn/post/100111000001110110111100011111/">
         </link>
         <updated>2020-04-21T11:15:21.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="目录">目录</h2>
@@ -1496,8 +1496,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[『2020年04月01日』]]></title>
-        <id>https://yinjun2024.github.io/post/1001101000011101111010001/</id>
-        <link href="https://yinjun2024.github.io/post/1001101000011101111010001/">
+        <id>https://yinjun2024.cn/post/1001101000011101111010001/</id>
+        <link href="https://yinjun2024.cn/post/1001101000011101111010001/">
         </link>
         <updated>2020-04-21T11:11:50.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="woc我棕了">woc我棕了！！！</h2>
@@ -1532,8 +1532,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[『友链』]]></title>
-        <id>https://yinjun2024.github.io/post/0000000001/</id>
-        <link href="https://yinjun2024.github.io/post/0000000001/">
+        <id>https://yinjun2024.cn/post/0000000001/</id>
+        <link href="https://yinjun2024.cn/post/0000000001/">
         </link>
         <updated>2020-04-21T11:11:18.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="排名不分先后啦-大家都是大佬哦qwq">排名不分先后啦 大家都是大佬哦qwq</h3>
@@ -1553,8 +1553,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[『RMQ』]]></title>
-        <id>https://yinjun2024.github.io/post/none1/</id>
-        <link href="https://yinjun2024.github.io/post/none1/">
+        <id>https://yinjun2024.cn/post/none1/</id>
+        <link href="https://yinjun2024.cn/post/none1/">
         </link>
         <updated>2020-04-21T11:10:39.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="目录">目录</h2>
@@ -1694,8 +1694,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[『关于』]]></title>
-        <id>https://yinjun2024.github.io/post/0000000000/</id>
-        <link href="https://yinjun2024.github.io/post/0000000000/">
+        <id>https://yinjun2024.cn/post/0000000000/</id>
+        <link href="https://yinjun2024.cn/post/0000000000/">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
